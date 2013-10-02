@@ -10,22 +10,24 @@
 \documentclass[10pt]{article}
 \usepackage{fullpage}
 \usepackage{comment}
-\usepackage[left=0.8in,top=1in,right=0.8in,nohead,nofoot]{geometry}
+\usepackage[left=0.8in,top=0.5in,right=0.8in,bottom=0.5in,nohead,nofoot]{geometry}
 \pagestyle{empty}
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 \renewcommand*\rmdefault{ppl}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=0.1in}
+\setitemize{itemsep=3pt,topsep=5pt,parsep=0pt,partopsep=0pt}
 \begin{document}
   \begin{tabular*}{6.9in}{l@{\extracolsep{\fill}}r}
     {\textbf{Asheesh Laroia}} \\
-    2772 Bryant St.   & asheesh@asheesh.org  \\
-    San Francisco, CA 94110  &  (585) 506-8865
+    2772 Bryant St., San Francisco, CA 94110  & asheesh@asheesh.org | (585) 506-8865
   \end{tabular*}
   \\
-  \vspace{0.1in}
-	 {\large \textbf{Experience}}
-  \vspace{0.1in}
+
+  \vspace{0.05in}
+	 \centerline{{\large \textbf{Experience}}}
 
 	   \begin{tabular*}{6.9in}{l@{\extracolsep{\fill}}r}
 	     \textbf{OpenHatch} & San Francisco, CA \\
@@ -34,7 +36,7 @@
 	   \end{tabular*}
 	   \begin{itemize}
 	   \item Co-founded tech startup, incubated by Shotput Ventures, to connect open source programmers with work opportunities. Built web app with Django and celery to aggregate profile data from diverse sources.
-           \item In 2011, re-focused into non-profit providing online education for newcomers to open source; raised funds, developed online open source learning tools, engaged volunteers, and improved curriculum for in-person events. Hired and trained additional staff member to lead the in-person events.
+           \item In 2011, re-focused into non-profit providing online education for newcomers to open source; raised funds, developed Django-based self-learning tools, and improved curriculum for in-person events. Hired and trained additional staff member to lead the in-person events, supported by dozens of volunteers.
 	   \end{itemize}
 
 	   \begin{tabular*}{6.9in}{l@{\extracolsep{\fill}}r}
@@ -42,7 +44,7 @@
              \emph{Software engineer} & September 2010 - July 2011 \\
 	   \end{tabular*}
 	   \begin{itemize}
-	   \item Maintained and extended Django web app where users create custom collections of video from around the web. Refreshed and added tests to video website scraping and API consumption code. Added PayPal IPN support for paid accounts.
+	   \item Maintained Django web app where users create custom collections of video from around the web, including video website scraping and API consumption code and integrating PayPal IPN.
 	   \end{itemize}
 
 	   \begin{tabular*}{6.9in}{l@{\extracolsep{\fill}}r}
@@ -51,16 +53,14 @@
              \emph{Intern, software contractor} & June 2006 - June 2007 \\
 	   \end{tabular*}
 	   \begin{itemize}
-	   \item Built a metadata library in C (liblicense), including packaging it for Fedora, Debian, and Ubuntu, and created a JavaScript license chooser widget for third-party web apps to embed license choosing. Wrote a custom Apache module to improve web performance logging and reviewed existing code for security issues. Updated our Firefox extension to extract and show license metadata from web pages.
-           \item Presented about CC at a NAS meeting in Tokyo, at O'Reilly's Open Source Convention in 2009, and at numerous other venues. Mentored interms and Google Summer of Code students.
+	   \item Select projects: RDF/XMP metadata library in C; JavaScript license chooser widget for third-party web apps to embed; custom Apache module to improve web performance logging; security-oriented code reviews. Spoke regularly about CC tech.
 	   \end{itemize}
 	   \begin{tabular*}{6.9in}{l@{\extracolsep{\fill}}r}
              \textbf{Johns Hopkins University} & Baltimore, MD \\
 	     \emph{Course assistant and research assistant} & June 2006 - May 2007 \\
 	   \end{tabular*}
 	   \begin{itemize}
-           \item As course assistant, graded assignments and held office hours tutoring students for Natural Language Processing and Declarative Methods classes.
-           \item As research assistant, co-maintained NLP lab computing cluster. Customized, supported, and maintained MediaWiki and RT ticket tracker for use by NLP lab members, hardening both against spam and backing up their contents nightly.
+           \item As course assistant, graded assignments and held office hours tutoring students for Natural Language Processing and Declarative Methods classes. As research assistant, co-maintained NLP computing cluster.
 	   \end{itemize}
 
 	   \begin{tabular*}{6.9in}{l@{\extracolsep{\fill}}r}
@@ -74,18 +74,18 @@
 
 
 % Maybe put Eisner's name under JHU; same with Michalak
-	 {\large \textbf{Technical activities}}
+  \vspace{0.05in}
+	   \centerline{{\large \textbf{Technical activities}}}
 	 \begin{itemize}
-           \item Spoke at PyCon 2009-2013 on topics such as introductory web scraping, improving gender diversity in open tech communities, and asynchronous programming with Scrapy. Also presented at OSCON, Creative Commons Technology Summit, and other venues.
-           \item Volunteer as a Debian Developer (contributing since 2006) and submitted patches to other open source communities including matplotlib, django-assets, Open Voting Consortium, python-keyring-lib, and python-github.
+           \item Speak regularly at conferences: PyCon, OSCON, Creative Commons Technology Summit, and others on topics such as asynchronous programming with Scrapy and improving gender diversity in open tech communities.
+           \item Active in open source: Developer in Debian (contributing since 2006) and regularly submit patches to communities such as matplotlib, django-assets, Open Voting Consortium, python-keyring-lib.
            \item 2008-2009: Volunteered with Electronic Frontier Foundation to teach Python programming to new programmers; used Selenium to extract patent reexamination information for a policy paper.
          \end{itemize}
 % JHU real research
 
 
-	 {\large \textbf{Education}}
-  \vspace{0.1in}
-
+  \vspace{0.05in}
+	 \centerline{{\large \textbf{Education}}}
 	   \begin{tabular*}{6.9in}{l@{\extracolsep{\fill}}r}
 	     \textbf{Johns Hopkins University} & September 2002 - May 2007
 	   \end{tabular*}
@@ -93,7 +93,14 @@
 	   \item May 2007: Master of Science in Engineering in Computer Science
 	   \item May 2006: B.A. in Cognitive Science \\
 	     Minors in Women, Gender, \& Sexuality; French Literature; and Computer Science
-           \item Masters thesis work: Contributed to C++-based class library for dynamic programming-oriented language, dyna.
+           \item Masters thesis work: C++-based class library for dynamic programming-oriented language, dyna.
+	   \end{itemize}
+
+  \vspace{0.05in}
+	 \centerline{{\large \textbf{Skills}}}
+	   \begin{itemize}
+	   \item xyz
+	   \item abc
 	   \end{itemize}
 
 \end{document}
